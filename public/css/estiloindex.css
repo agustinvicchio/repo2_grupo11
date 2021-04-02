@@ -1,0 +1,141 @@
+*{box-sizing: border-box;}
+
+
+body{
+    margin: 0px;
+
+}
+
+header{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white
+}
+
+
+
+header .header-banner{
+    background-color: rgb(214, 24, 24);
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    
+}
+
+header .header-banner div{
+    margin:10px ;
+}
+
+    header .top-header{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        margin-bottom: 10px;
+
+    }
+
+   
+
+        header .top-header i{
+            font-size: 32px;
+            align-self: center;
+            opacity: 75%;
+        }
+    
+    header .low-header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    header .low-header .icons{
+        display: flex;
+        justify-content: space-between;
+        font-size: 30px;
+        margin: 0 30px;
+        margin-top: 5px;
+        padding: 5px;
+    }
+
+    header .low-header .icons .icono{
+        display: flex;
+        flex-direction: column;
+        opacity: 75%;
+
+
+    }
+
+    header .low-header .icons .icono i{
+        margin: auto;
+
+
+
+    }
+
+
+    header .low-header .icons .icono p{
+        font-size:14px;
+        color: black;
+
+    }
+
+  
+
+
+    header .low-header .logo{
+        align-self: center;
+    }
+
+
+       
+
+
+
+
+/****************************************fin header************************************/
+
+body .productos{
+    border: 1px solid black;
+    margin: 90px;
+}
+
+body .productos .categoria .nombre-cat{
+    color: gray;
+    font-size: 40px;
+    font-weight: 300;
+    opacity: 90%;
+}
+
+body .productos article{
+    display: flex;
+    flex-direction: column;
+}
+
+
+body .productos article img{
+    flex:1 1 100%
+}
+
+
+body .productos article .desc{
+    margin: 10px;
+}
+
+body .productos article .nombre-precio{
+    display: flex;
+    justify-content: flex-start;
+}
+
+body .productos article .nombre-precio h3{
+    margin-right: 30px;
+}
