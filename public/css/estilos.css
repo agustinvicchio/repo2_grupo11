@@ -1,0 +1,84 @@
+*{box-sizing: border-box;}
+
+
+body{
+    margin: 0px;
+
+}
+
+
+header{
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+
+header div{
+    margin: 10px ;
+}
+
+
+header .hambu-menu{
+    color: rgb(141, 9, 9);
+    opacity: 60%;
+    font-size: 36px;
+}
+
+
+
+header .logo{
+    order: 1;
+    margin-left: 30px;
+}
+
+header .icons{
+    order: 2;
+    color: rgb(22, 21, 21);
+    opacity: 80%;
+    font-size: 24px;
+}
+
+header .icons i{
+    margin: 0px 5px;
+}
+
+
+/****************************************fin header************************************/
+
+body .productos{
+    border: 1px solid black;
+    margin: 10px;
+}
+
+body .productos .categoria .nombre-cat{
+    color: gray;
+    font-size: 40px;
+    font-weight: 300;
+    opacity: 90%;
+}
+
+body .productos article{
+    display: flex;
+    flex-direction: column;
+}
+
+
+body .productos article img{
+    flex:1 1 100%
+}
+
+
+body .productos article .desc{
+    margin: 10px;
+}
+
+body .productos article .nombre-precio{
+    display: flex;
+    justify-content: flex-start;
+}
+
+body .productos article .nombre-precio h3{
+    margin-right: 30px;
+}
