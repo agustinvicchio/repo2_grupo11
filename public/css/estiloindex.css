@@ -33,7 +33,9 @@ header .header-banner div{
     margin:10px ;
 }
 
-    header .top-header{
+
+
+    header .top-header {
         width: 95%;
         display: flex;
         flex-direction: row;
@@ -43,9 +45,19 @@ header .header-banner div{
 
     }
 
+    header .top-header  ul{
+        display: none;
+    }
+    
+
+        header .top-header .top{
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+        }
    
 
-        header .top-header i{
+        header .top-header .top i{
             font-size: 22px;
             align-self: center;
             opacity: 75%;
@@ -99,9 +111,6 @@ header .header-banner div{
 
        
 
-
-
-
 /****************************************fin header************************************/
 
 body .productos{
@@ -138,4 +147,56 @@ body .productos article .nombre-precio{
 
 body .productos article .nombre-precio h3{
     margin-right: 30px;
+}
+
+
+
+
+@media screen and (min-width:768px)
+{
+ 
+
+    header .top-header{
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    header .top-header .top{
+        margin: auto;
+    }
+
+    header .top-header .logo{
+        margin: auto;
+    }
+
+    header .top-header .top .logo img{
+        width: 320px;
+    }
+
+    header .top-header .top i{
+        font-size: 42px;
+        color: rgb(150, 21, 21);
+    }
+
+    header .top-header .mainmenu{
+        display: flex;
+        justify-content: space-around;
+        order: 2;
+        padding: 0 15px;
+    }
+
+    header .top-header .mainmenu li{
+        list-style: none;
+    }
+
+    header .top-header .mainmenu li a{
+        text-decoration: none;
+        font-style: none;
+        color: white
+        
+    }
+
+
 }
