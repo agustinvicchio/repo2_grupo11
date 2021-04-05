@@ -40,7 +40,7 @@ header .header-banner div{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 10px;
+        padding-top: 10px;
         margin-bottom: 10px;
 
     }
@@ -158,9 +158,10 @@ body .productos article .nombre-precio h3{
 
     header .top-header{
         flex-direction: column;
-        background-color: black;
+        background-color: white;
         width: 100%;
         margin-bottom: 0;
+        padding: 10px
     }
 
     header .top-header .top{
@@ -177,7 +178,7 @@ body .productos article .nombre-precio h3{
 
     header .top-header .top i{
         font-size: 42px;
-        color: rgb(150, 21, 21);
+        color:black;
     }
 
     header .top-header .mainmenu{
@@ -197,6 +198,21 @@ body .productos article .nombre-precio h3{
         color: white
         
     }
+
+    header .low-header .icons{
+        justify-content: space-around;
+        font-size: 36px;
+        margin: 0 15px;
+    }
+
+    header .low-header .header-banner div i{
+        font-size: 26px;
+    }
+
+    header .top-header .mainmenu {
+        display: none;
+    }
+
 
 
 }
