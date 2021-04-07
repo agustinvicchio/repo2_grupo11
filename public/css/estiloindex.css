@@ -6,6 +6,9 @@ body{
 
 }
 
+
+
+
 header{
     
     display: flex;
@@ -13,6 +16,15 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: white
+}
+
+
+header .mid-header{
+    display: none;
+}
+
+header .top-header .top .logo2{
+    display: none;
 }
 
 
@@ -216,3 +228,100 @@ body .productos article .nombre-precio h3{
 
 
 }
+
+
+@media screen and (min-width:1200px)
+{
+    header .top-header{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        margin: 30px;
+        border-bottom: 1px solid gray;
+    }
+
+
+    header .top-header .top{
+        display: flex;
+        flex: 2 1 20%;
+        margin: 0;
+        max-width: 330px;
+
+    }
+
+    header .top-header .top i{
+        display: none;
+        order: 4;
+    }
+
+    header .top-header .top .logo{
+      margin: 0;
+      width: auto;
+    }
+
+
+    header .top .mainmenu{
+        flex: 1 1 70%;
+    }
+
+
+    header .top-header .mainmenu{
+        display: flex;
+        justify-content: space-between;
+        flex: 1 2 auto;
+        
+        
+    }
+
+    header .top-header .mainmenu li a{
+        color: black;
+        font-size: 26px;
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    header .top-header .mainmenu li{
+        margin: 0px 20px;
+        align-self: center; }
+
+
+
+
+        header .mid-header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 95%;   
+            margin: 15px 10px;     
+        }
+
+        header .mid-header .search-bar input{
+            max-width: 800px;
+        }
+
+        header .mid-header .user i{
+            font-size: 36px;
+            margin: 0px 15px;
+            opacity: 80%;
+        }
+        
+
+
+        header .low-header{
+            display: none;
+        }
+
+
+header .top-header .top .logo2{
+    display: block;}
+
+
+
+header .top-header .top .logo1{
+    display: none;
+}
+
+}
+
+
+
