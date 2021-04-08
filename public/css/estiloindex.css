@@ -3,6 +3,7 @@
 
 body{
     margin: 0px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 
 }
 
@@ -24,7 +25,8 @@ header .mid-header{
 }
 
 header .top-header .top .logo2{
-    display: none;
+    display: block;
+    width: 80px;
 }
 
 header .top-header .low{
@@ -130,41 +132,6 @@ header .header-banner div{
 
 /****************************************fin header************************************/
 
-body .productos{
-    border: 1px solid black;
-    margin: 90px;
-}
-
-body .productos .categoria .nombre-cat{
-    color: gray;
-    font-size: 40px;
-    font-weight: 300;
-    opacity: 90%;
-}
-
-body .productos article{
-    display: flex;
-    flex-direction: column;
-}
-
-
-body .productos article img{
-    flex:1 1 100%
-}
-
-
-body .productos article .desc{
-    margin: 10px;
-}
-
-body .productos article .nombre-precio{
-    display: flex;
-    justify-content: flex-start;
-}
-
-body .productos article .nombre-precio h3{
-    margin-right: 30px;
-}
 
 
 
@@ -237,16 +204,40 @@ body .productos article .nombre-precio h3{
 
 @media screen and (min-width:1200px)
 {
+
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
     header .top-header{
         display: flex;
         flex-direction: column;
         margin: 0 20px;
+        background-color: rgb(255, 255, 255);
+        order: 1;
+        max-width: 1500px;
+        margin: auto;
+    }
+
+    header .banner{
+        order:2
+    }
+
+
+    header .top-header .low .search-bar i{
+        color: black;
+        position: relative;
+        right: 30px;
     }
 
 
     header .top-header .top{
         display: flex;
         justify-content: space-between;
+        order:2;
+        width: 100%;
        
 
     }
@@ -264,18 +255,22 @@ body .productos article .nombre-precio h3{
 
     header .top-header .mainmenu{
         display: flex;
-        justify-content: space-between;
+        justify-content: space- space-around;
         flex: 1 2 auto;
-        margin: 35px;
         
         
     }
 
     header .top-header .mainmenu li a{
-        color: black;
-        font-size: 26px;
-        font-style: italic;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        color:black;
+        font-size: 20px;
+        font-weight: 450;
+        padding: 0px 15px;
+        border-right: 3px solid rgba(51, 62, 72, 0.1);
+        border-left:  3px solid rgba(51, 62, 72, 0.1);
+        margin: auto;
+
+        
     }
 
     header .top-header .mainmenu li{
@@ -289,7 +284,7 @@ body .productos article .nombre-precio h3{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            width: 95%;   
+            width: 100%;   
             margin: 15px 10px;     
         }
 
@@ -298,51 +293,152 @@ body .productos article .nombre-precio h3{
         }
 
     
-        
-
-
         header .low-header{
+            display: block;
+            order: 0;
+            margin-top: -25px;
+            margin-bottom: 0;
+            height: 90px;
+        }
+        header .low-header .header-banner{
+            padding: 0;
+        }
+
+        header .low-header .header-banner div{
+            display: flex;
+            flex-direction: row;
+            font-size: 14px;
+        }
+        header .low-header .header-banner div i{
+            align-self: center;
+            margin: 0px 10px;
+        }
+
+        header .low-header .icons{
             display: none;
         }
 
 
 
 
-
-header .top-header .top .logo1{
-    display: block;
+header .top-header .top .logo2{
+    display:none;
 }
 
 
 header .top-header .low{
     display: flex;
     justify-content: space-between;
-    margin: 20px 40px;
-   
+    padding:10px ;
+    border-bottom: 3px solid rgba(51, 62, 72, 0.1);
 }
 
 
 header .top-header .low .user{
-    font-size: 24px;
-    margin-right: 65px;
+    font-size: 35px;
+    align-self: center;
+    color: black;
+    position: relative;
+    right: 10px;
+    opacity: 85%;
 }
 
 
 header .top-header .low form{
     align-self: center;
-    border-color: transparent;
+    width: 700px
+
+
 
 }
 
 header .top-header .low form input{
-    width: 600px;
-    border-radius: 10px;
+    opacity: 85%;
+    border-radius: 20px;
+    height: 40px;
+    padding: 15px;
+    width: 600px
+}
+
+
+}
+
+
+
+/*
+@media screen and (min-width:1430px)
+{
+    header .top-header .low form{
+        align-self: center;
+        width: 1000px
+    
+    
+    
+    }
+    
+    header .top-header .low form input{
+        opacity: 85%;
+        border-radius: 20px;
+        height: 40px;
+        padding: 15px;
+        width: 900px
+    }
+
+
+    header .top-header .banner{
+        width: 100%;
+    }
+
+    header .top-header .banner img{
+        width: 100%;
+    }
+
+}
+
+ */
+
+
+
+
+/***************************fin style header**********************************/
+
+/*
+body .productos{
     border: 1px solid black;
-    height: 30px;
+    margin: 90px;
+}
+
+body .productos .categoria .nombre-cat{
+    color: gray;
+    font-size: 40px;
+    font-weight: 300;
+    opacity: 90%;
+}
+
+body .productos article{
+    display: flex;
+    flex-direction: column;
 }
 
 
+body .productos article img{
+    flex:1 1 100%
+}
+
+
+body .productos article .desc{
+    margin: 10px;
+}
+
+body .productos article .nombre-precio{
+    display: flex;
+    justify-content: flex-start;
+}
+
+body .productos article .nombre-precio h3{
+    margin-right: 30px;
 }
 
 
 
+*/
