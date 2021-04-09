@@ -41,14 +41,14 @@ header .header-banner{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     text-align: center;
     padding: 5px;
     
 }
 
 header .header-banner div{
-    margin:10px ;
-}
+margin-top: 15px;}
 
 
 
@@ -72,7 +72,7 @@ header .header-banner div{
 
         header .top-header .top{
             width: 100%;
-            margin: auto;
+            margin:10px auto;
             display: flex;
             justify-content: space-between;
             position: fixed;
@@ -86,6 +86,7 @@ header .header-banner div{
             font-size: 28px;
             align-self: center;
             opacity: 60%;
+            padding: 20px;
         }
     
     header .low-header{
@@ -135,7 +136,7 @@ header .header-banner div{
 
 
     header .banner{
-        margin-top: 120px;
+        margin-top: 90px;
     }
 
 
@@ -288,7 +289,10 @@ header .header-banner div{
         display: flex;
         justify-content: space- space-around;
         flex: 1 2 auto;
+        margin: 0;
+        padding: 3px
         
+
         
     }
 
@@ -328,11 +332,11 @@ header .header-banner div{
             display: block;
             order: 0;
             margin-top: -25px;
-            margin-bottom: 0;
+           
             height: 90px;
         }
         header .low-header .header-banner{
-            padding: 0;
+            position: fixed;
         }
 
         header .low-header .header-banner div{
@@ -393,6 +397,10 @@ header .top-header .low form input{
     height: 40px;
     padding: 15px;
     width: 600px
+}
+
+header .banner{
+    margin-top: 140px;
 }
 
 
