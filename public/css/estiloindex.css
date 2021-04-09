@@ -8,9 +8,6 @@ body{
 
 }
 
-
-
-
 header{
     
     display: flex;
@@ -38,7 +35,8 @@ header .top-header .low{
 
 
 header .header-banner{
-    background-color: rgb(214, 24, 24);
+    background: rgb(52,7,7);
+    background: radial-gradient(circle, rgba(52,7,7,1) 0%, rgba(180,20,52,1) 100%);;
     color: white;
     width: 100%;
     display: flex;
@@ -399,12 +397,6 @@ header .top-header .low form input{
 
 
 }
-
-
-
-
-
-
 
 
 /***************************fin style header**********************************/
