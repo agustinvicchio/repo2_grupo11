@@ -3,6 +3,7 @@
 
 body{
     margin: 0px;
+    background-color: rgb(240, 240, 240);
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 
 }
@@ -202,7 +203,7 @@ header .header-banner div{
 }
 
 
-@media screen and (min-width:1200px)
+@media screen and (min-width:1290px)
 {
 
 
@@ -331,6 +332,8 @@ header .top-header .low{
     justify-content: space-between;
     padding:10px ;
     border-bottom: 3px solid rgba(51, 62, 72, 0.1);
+    width: 90%;
+    margin: auto;
 }
 
 
@@ -346,7 +349,9 @@ header .top-header .low .user{
 
 header .top-header .low form{
     align-self: center;
-    width: 700px
+    width: 700px;
+    position: relative;
+    left: 20px;
 
 
 
@@ -365,80 +370,112 @@ header .top-header .low form input{
 
 
 
-/*
-@media screen and (min-width:1430px)
-{
-    header .top-header .low form{
-        align-self: center;
-        width: 1000px
-    
-    
-    
-    }
-    
-    header .top-header .low form input{
-        opacity: 85%;
-        border-radius: 20px;
-        height: 40px;
-        padding: 15px;
-        width: 900px
-    }
 
-
-    header .top-header .banner{
-        width: 100%;
-    }
-
-    header .top-header .banner img{
-        width: 100%;
-    }
-
-}
-
- */
 
 
 
 
 /***************************fin style header**********************************/
 
-/*
+
+/***************************style productos******************/
+
+
+
+
+
+
+
+@media screen and (min-width:1290px)
+{
+
+
+
+ 
+body section{
+    background-color: rgb(240, 240, 240);
+}
+
 body .productos{
-    border: 1px solid black;
-    margin: 90px;
+    margin-top: -30px;
+    background-color: rgb(240, 240, 240);
+    padding: 40px;
 }
 
-body .productos .categoria .nombre-cat{
-    color: gray;
-    font-size: 40px;
-    font-weight: 300;
-    opacity: 90%;
-}
-
-body .productos article{
+body .carusel{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+body .productos .carusel .titulo{
+    font-size: 45px;
+    padding: 20px;
+    text-align: center;
+    opacity: 80%;
+    width: 400px;
+    margin: auto;
 }
 
 
-body .productos article img{
-    flex:1 1 100%
-}
-
-
-body .productos article .desc{
-    margin: 10px;
-}
-
-body .productos article .nombre-precio{
+body .productos .carusel .articulos{
+   
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-body .productos article .nombre-precio h3{
-    margin-right: 30px;
+body .productos  article{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-flow: column;
+    border-radius: 6px;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+    background-color: white;
+    cursor: pointer;
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+    margin: 10px;
+    max-width: 400px;
+
+
+}
+
+body .productos article:hover{
+    box-shadow: 0px 0px 60px rgba(0,0,0,0.3);
 }
 
 
 
-*/
+body .productos article .info{
+    display: flex;
+    flex-flow: column;
+    border-top: 1px solid rgb(230,230,230);
+    padding:25px;
+
+}
+
+body .categorias{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    margin: auto;
+    width: 80%;
+
+}
+
+body .categorias .categoria{
+    margin:0;
+    margin-top: -5px;
+}
+
+body .categorias .categoria a img{
+    max-width: 500px;
+}
+}
+
