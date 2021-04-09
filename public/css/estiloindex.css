@@ -41,27 +41,25 @@ header .header-banner{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     text-align: center;
     padding: 5px;
+    margin-bottom: 3px;
+
     
 }
 
 header .header-banner div{
-margin-top: 15px;}
+    margin: 10px;}
 
 
 
     header .top-header {
-        width: 100%;
+        width: 95%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 10px;
         background-color: white;
-        position: fixed;
-        z-index: 10 ;
-
 
     }
 
@@ -75,7 +73,7 @@ margin-top: 15px;}
             margin:10px auto;
             display: flex;
             justify-content: space-between;
-            position: fixed;
+        
             background-color: white;
             z-index: 10;
             position: relative;
@@ -136,7 +134,7 @@ margin-top: 15px;}
 
 
     header .banner{
-        margin-top: 90px;
+        margin-top: 2px;
     }
 
 

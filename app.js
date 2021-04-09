@@ -1,5 +1,5 @@
 const express = require('express');
-//const color = require('colors');
+const color = require('colors');
 const path = require('path');
 const app = express();
 
@@ -26,7 +26,6 @@ app.get('/register', (req, res) => {
 
 
 //Levantamos servidor y por si nos dan un puerto
-app.listen(3000 , () => 
-{
-    console.log("levantando servidor")
-});
+app.set('port', process.env.PORT || 3000);
+app.listen(app.get('port'));
+console.log("Server on port".trap.random, app.get('port'));
