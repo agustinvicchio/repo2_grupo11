@@ -1,20 +1,17 @@
-* {
-    box-sizing: border-box;
-    }
+*{box-sizing: border-box;}
 
-body {
-    background-color: black;
+body{
     margin: 0px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(240, 240, 240);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
-/*********************************HEADER******************/
-header{
+
+header{  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
-    width:100%;
+    background-color: white
 }
 
     header .mid-header{
@@ -26,56 +23,54 @@ header{
                     width: 80px;
                 }
 
-        header .top-header .low{
-            display: none;
-        }
+header .top-header .low{
+    display: none;
+}
 
-    header .header-banner{
-        background-color: rgb(214, 24, 24);
-        color: white;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        padding: 5px;
-        margin-bottom: 10px;  
-    }
+header .header-banner{
+    background: rgb(52,7,7);
+    background: radial-gradient(circle, rgba(52,7,7,1) 0%, rgba(180,20,52,1) 100%);;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 3px;  
+}
 
-        header .header-banner div{
-            margin:10px ;
-        }
+header .header-banner div{
+    margin: 10px;}
 
     header .top-header {
         width: 95%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 10px;
         margin-bottom: 10px;
+        background-color: white;
     }
 
-        header .top-header  ul{
-            display: none;
-        }
-
+    header .top-header  ul{
+        display: none;
+    }
+    
         header .top-header .top{
-            width: 95%;
+            width:100%;
+            margin:10px auto;
             display: flex;
             justify-content: space-between;
+            background-color: white;
+            z-index: 10;
+            position: relative;
         }
    
-            header .top-header .top .mainmenu{
-                padding: 0px;
-                display: flex;
-                justify-content: center;
-                
-            }
-
-            header .top-header .top i{
-                font-size: 22px;
-                align-self: center;
-                opacity: 75%;
-            }
+        header .top-header .top i{
+            font-size: 28px;
+            align-self: center;
+            opacity: 60%;
+            padding: 20px;
+        }
     
     header .low-header{
         width: 100%;
@@ -111,16 +106,253 @@ header{
         align-self: center;
     }
 
-/*********************************FIN DEL HEADER******************/
+    header .banner{
+        margin-top: 2px;
+    }
 
-/********************MAIN***************************/
+/****************************Media Q Header****************/
+
+@media screen and (min-width:768px)
+{
+
+    header .top-header{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    header .top-header .top{
+        margin: auto;
+        width: 100%;
+        align-self: center;
+        padding: 20px;
+    }
+
+    header .top-header .logo{
+        margin: auto;
+    }
+
+    header .top-header .top .logo img{
+        width: 320px;
+    }
+
+    header .top-header .top i{
+        font-size: 42px;
+        color:black;
+    }
+
+    header .top-header .mainmenu{
+        display: flex;
+        justify-content: space-around;
+        order: 2;
+        padding: 0 15px;
+    }
+
+    header .top-header .mainmenu li{
+        list-style: none;
+    }
+
+    header .top-header .mainmenu li a{
+        text-decoration: none;
+        font-style: none;
+        color: white
+        
+    }
+
+    header .low-header .icons{
+        justify-content: space-around;
+        font-size: 36px;
+        margin: 0 15px;
+    }
+
+    header .low-header .header-banner div i{
+        font-size: 26px;
+    }
+
+    header .top-header .mainmenu {
+        display: none;
+    }
+
+
+
+}
+
+
+@media screen and (min-width:1242px)
+{
+
+    body{
+        margin: 0;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .top-header{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        order: 1;
+      
+    }
+
+    header .banner{
+        order:2
+    }
+
+
+    header .top-header .low .search-bar i{
+        color: black;
+        position: relative;
+        right: 30px;
+    }
+
+    header .top-header .top{
+        display: flex;
+        justify-content: space-between;
+        order:2;
+        width: 100%;
+        align-self: center;
+        border-top: 3px solid rgba(51, 62, 72, 0.1);
+        border-bottom: 3px solid rgba(51, 62, 72, 0.1);
+
+    }
+
+    header .top-header .top .mainmenu li:hover a {
+        background-color: rgba(0, 0, 0, 0.39);
+        color:white;
+        transition: all 230ms;
+    }
+        
+
+    header .top-header .top i{
+        display: none;
+        order: 4;
+    }
+
+    header .top-header .logo1 img{
+        width: 300px;
+    }
+   
+    header .top-header .mainmenu{
+        display: flex;
+        justify-content: space- space-around;
+        flex: 1 2 auto;
+        margin: 0;
+        padding: 3px   
+    }
+
+    header .top-header .mainmenu li a{
+        color:black;
+        font-size: 20px;
+        font-weight: 450;
+        padding: 0px 15px;
+        border-right: 3px solid rgba(51, 62, 72, 0.1);
+        border-left:  3px solid rgba(51, 62, 72, 0.1);
+        margin: auto;   
+    }
+
+    header .top-header .mainmenu li{
+        margin: 0px 20px;
+        align-self: center; }
+
+        header .mid-header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;   
+            margin: 15px 10px;     
+        }
+
+        header .mid-header .search-bar input{
+            max-width: 800px;
+        }
+
+    
+        header .low-header{
+            display: block;
+            order: 0;
+            margin-top: -25px;
+           
+            height: 90px;
+        }
+        header .low-header .header-banner{
+            position: fixed;
+        }
+
+        header .low-header .header-banner div{
+            display: flex;
+            flex-direction: row;
+            font-size: 14px;
+        }
+        header .low-header .header-banner div i{
+            align-self: center;
+            margin: 0px 10px;
+        }
+
+        header .low-header .icons{
+            display: none;
+        }
+
+header .top-header .top .logo2{
+    display:none;
+}
+
+header .top-header .low{
+    display: flex;
+    justify-content: space-between;
+    padding:10px ;
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+header .top-header .low .user{
+    font-size: 35px;
+    align-self: center;
+    color: black;
+    position: relative;
+    right: 10px;
+    opacity: 85%;
+}
+
+
+header .top-header .low form{
+    align-self: center;
+    width: 700px;
+    position: relative;
+    left: 20px;
+}
+
+header .top-header .low form input{
+    opacity: 85%;
+    border-radius: 20px;
+    height: 40px;
+    padding: 15px;
+    width: 600px
+}
+
+header .banner{
+    margin-top: 140px;
+}
+
+
+}
+
+/***************************fin style header**********************************/
+
+/*****************************************************************************FIN DEL HEADER*************************************************************************/
+
+/*********************************MAIN****************************************/
 
     main {
         background-color: white;
         display: flex;
         flex-direction: row;
-        margin: 0px;
-        padding: 5px;
+        margin: 0px 0px 0px 0px;
+        padding: 25px 5px 5px 5px;
     }
         .sectionLeft {
             background-color: white;
@@ -276,7 +508,15 @@ header{
                     border: 0px;
                     margin: 10px 10px 10px 0px;
                     height: 20%;
+                    transition: all 0.2s;
                 }
+
+                button:hover{
+                    background-color:rgba(52,7,7,1);
+                    border-style: solid;
+                    border-width: 5px;
+                    border-color:darkred;
+                    }
             
                 .cuotas {
                     margin: 0px 0px 0px 0px;
@@ -284,222 +524,261 @@ header{
                     font-size: 14px;
                     color: lightslategrey;
                 }
-/********************FIN DEL MAIN***************************/
 
-/********************Footer***************************/
+/*******************************************Media Q body**********************************/
 
-    footer {
-        margin: 0px;
-        padding: 5px;
-        display: flex;
-        flex-direction: row;
-        color: white;
-        background-color: black;
-        border: lightgray;
-        border-style: solid;
-        border-width: 0.5px;
-    }
-
-        .linksFooter1 {
-            display: flex;
-            flex-direction: column;
-            margin: 0px;
-            padding: 0px;
-            width: 25%;
-        }
-
-            footer ul {
-                padding: 0px;
-            }
-
-        .linksFooter2 {
-            display: flex;
-            flex-direction: column;
-            margin: 0px;
-            padding: 0px;
-            width: 25%;
-        }
-
-        .redesSociales {
-            display: flex;
-            flex-direction: column;
-            margin: 0px;
-            padding: 0px;
-            width: 25%;
-        }
-
-            footer p {
-                padding: 0px;
-            }
-
-            .iconosRedes {
-                display: flex;
-                flex-direction: row;
-                margin: 0px;
-                padding: 0px;
-                font-size: 20px;
-                width: 100%;
-            }
-
-        .informacion {
-            display: flex;
-            flex-direction: column;
-            margin: 0px;
-            padding: 0px;
-            width: 25%;
-        }
-
-            .informacion i {
-                padding: 0px;
-            }
-
-/********************Fin del Footer***************************/
-
-
-/****************************Media Q Header****************/
-
-@media screen and (min-width:1200px)
+@media screen and (max-width:768px)
 {
-
-
-    header{
+    main {
+        background-color: white;
         display: flex;
         flex-direction: column;
+        margin: 0px 0px 0px 0px;
+        padding: 25px 5px 5px 5px;
     }
 
-    header .top-header{
+    .sectionLeft {
+        background-color: white;
+        width: auto;
+        height: 50%;
         display: flex;
         flex-direction: column;
-        margin: 0 20px;
-        background-color: rgb(255, 255, 255);
-        order: 1;
-        max-width: 1500px;
-        margin: auto;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+        order:1;
+        
     }
 
-    header .banner{
-        order:2
-    }
+        #imagenPrincipal {
+            width: 100%;
+            height: 50%;
+            margin: 10px 0px 0px 0px;
+            padding: 0px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+        }
 
-
-    header .top-header .low .search-bar i{
-        color: black;
-        position: relative;
-        right: 30px;
-    }
-
-
-    header .top-header .top{
-        display: flex;
-        justify-content: space-between;
-        order:2;
-        width: 100%;
-    }
-
-    header .top-header .top i{
-        display: none;
-        order: 4;
-    }
-
-    header .top-header .logo1 img{
-        width: 300px;
-    }
-   
-    
-
-    header .top-header .mainmenu{
-        display: flex;
-        justify-content: space- space-around;
-        flex: 1 2 auto;  
-    }
-
-    header .top-header .mainmenu li a{
-        color:black;
-        font-size: 20px;
-        font-weight: 450;
-        padding: 0px 15px;
-        border-right: 3px solid rgba(51, 62, 72, 0.1);
-        border-left:  3px solid rgba(51, 62, 72, 0.1);
-        margin: auto;
-    }
-
-    header .top-header .mainmenu li{
-        margin: 0px 20px;
-        align-self: center; }
-
-
-        header .mid-header{
+        .imagenesAbajo {
+            width: 100%;
+            height: 20%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            width: 100%;   
-            margin: 15px 10px;     
+            align-items: center;
+            margin: 20px 0px 20px 0px;
+            padding: 0px;
         }
 
-        header .mid-header .search-bar input{
-            max-width: 800px;
+            #imagenSecundaria {
+                width: 20%;
+                height: 80%;
+                padding: 0px;
+                margin: 0px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: lightgrey;
+            }
+
+            .descripcionProducto {
+                font-size: 12px;
+                text-align: justify;
+                height: 30%;
+                width: 100%;
+                margin: 10px 0px 10px 0px;
+                padding: 0px;
+            }
+
+    .sectionRight {
+        background-color:white;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0px;
+        padding: 10px;
+    }
+
+        h1 {
+            font-size: 25px;
+            font-weight: bold;
+            margin: 0px 0px 5px 0px;
+            padding: 0px;
+            height: 7.5%;
         }
 
-    
-        header .low-header{
-            display: block;
-            order: 0;
-            margin-top: -25px;
-            margin-bottom: 0;
-            height: 90px;
-        }
-        header .low-header .header-banner{
-            padding: 0;
+        h2 {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0px 0px 5px 0px;
+            padding: 0px;
+            height: 10%;
         }
 
-        header .low-header .header-banner div{
+        h3 {
+            font-size: 25px;
+            margin: 0px 0px 5px 0px;
+            padding: 0px;
+            height: 7.5%;
+        }
+
+        form {
             display: flex;
-            flex-direction: row;
-            font-size: 14px;
-        }
-        header .low-header .header-banner div i{
-            align-self: center;
-            margin: 0px 10px;
-        }
-
-        header .low-header .icons{
-            display: none;
+            flex-direction: column;
+            justify-content: left;
+            margin: 0px;
+            padding: 0px;
+            height: 40%;
         }
 
-header .top-header .top .logo2{
-    display:none;
+            .caracteristicas {
+                display: flex;
+                flex-direction: row;
+                margin: 10px 10px 10px 0px;
+                padding: 0px;
+                height: 25%;
+            }
+
+                #rodado {
+                    width: 50%;
+                    margin: 10px 10px 10px 0px;
+                    font-size: 20px;
+                    border-style: solid;
+                    border-width: 2px;
+                    border-color: lightgray;
+                }
+
+                #color {
+                    width: 50%;
+                    margin: 10px 0px 10px 10px;
+                    font-size: 20px;
+                    border-style: solid;
+                    border-width: 2px;
+                    border-color: lightgray;
+                }
+
+                .counter {
+                    display: flex;
+                    align-items: center;
+                    padding: 0px;
+                    margin: 10px 10px 0px 0px;
+                    height: 25%;
+                }
+                    .counter input {
+                        width: 50px;
+                        border: 0;
+                        line-height: 30px;
+                        font-size: 25px;
+                        text-align: center;
+                        background: black;
+                        color: white;
+                        appearance: none;
+                        outline: 0;
+                    }
+                    .counter span {
+                        display: block;
+                        font-size: 30px;
+                        padding: 0 10px;
+                        cursor: pointer;
+                        color: black;
+                        user-select: none;
+                    }
+
+            button {
+                background-color: darkred;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                border-radius: 5px;
+                border: 0px;
+                margin: 10px 10px 10px 0px;
+                height: 20%;
+                transition: all 0.2s;
+            }
+
+            button:hover{
+                background-color:rgba(52,7,7,1);
+                border-style: solid;
+                border-width: 5px;
+                border-color:darkred;
+                }
+        
+            .cuotas {
+                margin: 0px 0px 0px 0px;
+                padding: 0px;
+                font-size: 14px;
+                color: lightslategrey;
+            }
 }
 
-
-header .top-header .low{
-    display: flex;
-    justify-content: space-between;
-    padding:10px ;
-    border-bottom: 3px solid rgba(51, 62, 72, 0.1);
-}
-
-
-header .top-header .low .user{
-    font-size: 35px;
-    align-self: center;
-    color: black;
-    position: relative;
-    right: 10px;
-    opacity: 85%;
-}
-
-
-header .top-header .low form{
-    align-self: center;
-    width: 700px
-}
-
-header .top-header .low form input{
-    opacity: 85%;
-    border-radius: 20px;
-    height: 40px;
-    padding: 15px;
-    width: 600px;
-}
+@media screen and (min-width:1242px)
+{
 
 }
+
+/****************************************************************************FIN DEL MAIN***********************************************************************************/
+
+/*******************************************Footer****************************************/
+
+.footer-basic {
+    padding:40px 0;
+    background-color:black;
+    color:white;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+
+/*****************************************************************************FIN DEL FOOTER*************************************************************************/
