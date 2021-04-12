@@ -919,3 +919,383 @@ body .categorias .categoria h3{
     color:#aaa;
     margin-bottom:0;
   }
+
+
+/****************************************************************ACA ARRANCA ESTILOS PRODUCTO********************************************/
+
+  /*********************************MAIN****************************************/
+
+  main {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 0px 0px;
+    padding: 25px 5px 5px 5px;
+}
+    .sectionLeft {
+        background-color: white;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #imagenPrincipal {
+            width: 100%;
+            height: 50%;
+            margin: 10px 0px 0px 0px;
+            padding: 0px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+        }
+
+        .imagenesAbajo {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px;
+            padding: 0px;
+        }
+
+            #imagenSecundaria {
+                width: 20%;
+                height: 80%;
+                padding: 0px;
+                margin: 0px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: lightgrey;
+            }
+
+            .descripcionProducto {
+                font-size: 12px;
+                text-align: justify;
+                height: 30%;
+                width: 100%;
+                margin: 10px 0px 10px 0px;
+                padding: 0px;
+            }
+
+    .sectionRight {
+        background-color:white;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0px;
+        padding: 10px;
+    }
+
+        h1 {
+            font-size: 25px;
+            font-weight: bold;
+            margin: 0px 0px 5px 0px;
+            padding: 0px;
+            height: 7.5%;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0px 0px 5px 0px;
+            padding: 0px;
+            height: 10%;
+        }
+
+        h3 {
+            font-size: 25px;
+            margin: 0px 0px 5px 0px;
+            padding: 0px;
+            height: 7.5%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            margin: 0px;
+            padding: 0px;
+            height: 40%;
+        }
+
+            .caracteristicas {
+                display: flex;
+                flex-direction: row;
+                margin: 10px 10px 10px 0px;
+                padding: 0px;
+                height: 25%;
+            }
+
+                #rodado {
+                    width: 50%;
+                    margin: 10px 10px 10px 0px;
+                    font-size: 20px;
+                    border-style: solid;
+                    border-width: 2px;
+                    border-color: lightgray;
+                }
+
+                #color {
+                    width: 50%;
+                    margin: 10px 0px 10px 10px;
+                    font-size: 20px;
+                    border-style: solid;
+                    border-width: 2px;
+                    border-color: lightgray;
+                }
+
+                .counter {
+                    display: flex;
+                    align-items: center;
+                    padding: 0px;
+                    margin: 10px 10px 0px 0px;
+                    height: 25%;
+                }
+                    .counter input {
+                        width: 50px;
+                        border: 0;
+                        line-height: 30px;
+                        font-size: 25px;
+                        text-align: center;
+                        background: black;
+                        color: white;
+                        appearance: none;
+                        outline: 0;
+                    }
+                    .counter span {
+                        display: block;
+                        font-size: 30px;
+                        padding: 0 10px;
+                        cursor: pointer;
+                        color: black;
+                        user-select: none;
+                    }
+
+            button {
+                background-color: darkred;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                border-radius: 5px;
+                border: 0px;
+                margin: 10px 10px 10px 0px;
+                height: 20%;
+                transition: all 0.2s;
+            }
+
+            button:hover{
+                background-color:rgba(52,7,7,1);
+                border-style: solid;
+                border-width: 5px;
+                border-color:darkred;
+                }
+        
+            .cuotas {
+                margin: 0px 0px 0px 0px;
+                padding: 0px;
+                font-size: 14px;
+                color: lightslategrey;
+            }
+
+/*******************************************Media Q body**********************************/
+
+@media screen and (max-width:768px)
+{
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+    border-radius: 10px;
+
+}
+
+.sectionLeft {
+    background-color: white;
+    width: auto;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    order:1;
+    
+}
+
+    #imagenPrincipal {
+        width: 100%;
+        height: 50%;
+        margin: 10px 0px 0px 0px;
+        padding: 0px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: lightgrey;
+    }
+
+    .imagenesAbajo {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0px 20px 0px;
+        padding: 0px;
+    }
+
+        #imagenSecundaria {
+            width: 20%;
+            height: 80%;
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+        }
+
+        .descripcionProducto {
+            font-size: 12px;
+            text-align: justify;
+            height: 30%;
+            width: 100%;
+            margin: 10px 0px 10px 0px;
+            padding: 0px;
+        }
+
+.sectionRight {
+    background-color:white;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px;
+    padding: 10px;
+}
+
+    h1 {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0px 0px 5px 0px;
+        padding: 0px;
+        height: 7.5%;
+    }
+
+    h2 {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0px 0px 5px 0px;
+        padding: 0px;
+        height: 10%;
+    }
+
+    h3 {
+        font-size: 25px;
+        margin: 0px 0px 5px 0px;
+        padding: 0px;
+        height: 7.5%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin: 0px;
+        padding: 0px;
+        height: 40%;
+    }
+
+        .caracteristicas {
+            display: flex;
+            flex-direction: row;
+            margin: 10px 10px 10px 0px;
+            padding: 0px;
+            height: 25%;
+        }
+
+            #rodado {
+                width: 50%;
+                margin: 10px 10px 10px 0px;
+                font-size: 20px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: lightgray;
+            }
+
+            #color {
+                width: 50%;
+                margin: 10px 0px 10px 10px;
+                font-size: 20px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: lightgray;
+            }
+
+            .counter {
+                display: flex;
+                align-items: center;
+                padding: 0px;
+                margin: 10px 10px 0px 0px;
+                height: 25%;
+            }
+                .counter input {
+                    width: 50px;
+                    border: 0;
+                    line-height: 30px;
+                    font-size: 25px;
+                    text-align: center;
+                    background: black;
+                    color: white;
+                    appearance: none;
+                    outline: 0;
+                }
+                .counter span {
+                    display: block;
+                    font-size: 30px;
+                    padding: 0 10px;
+                    cursor: pointer;
+                    color: black;
+                    user-select: none;
+                }
+
+        button {
+            background-color: darkred;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 5px;
+            border: 0px;
+            margin: 10px 10px 10px 0px;
+            height: 20%;
+            transition: all 0.2s;
+        }
+
+        button:hover{
+            background-color:rgba(52,7,7,1);
+            border-style: solid;
+            border-width: 5px;
+            border-color:darkred;
+            }
+    
+        .cuotas {
+            margin: 0px 0px 0px 0px;
+            padding: 0px;
+            font-size: 14px;
+            color: lightslategrey;
+        }
+}
+
+@media screen and (min-width:1242px)
+{
+
+}
+
+/****************************************************************************FIN DEL MAIN***********************************************************************************/
