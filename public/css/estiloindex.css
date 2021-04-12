@@ -17,6 +17,10 @@ header{
     background-color: white
 }
 
+header .banner {
+    margin-top: 110px;
+}
+
 
 header .mid-header{
     display: none;
@@ -35,30 +39,36 @@ header .top-header .low{
 header .header-banner{
     opacity: 0.9;
     background: rgb(52,7,7);
-    background: radial-gradient(circle, rgba(52,7,7,1) 0%, rgba(180,20,52,1) 100%);;
+    background: radial-gradient(circle, rgba(52,7,7,1) 0%, rgba(180,20,52,1) 100%);
+    padding-bottom: 5px;
+}
+
+header .header-banner .contenedor{
+
     color: white;
     width: 100%;
     display: flex;
     justify-content: space-around;
     text-align: center;
-    padding: 5px;
-    margin-bottom: 3px;
+    padding-top: 10px;
+    margin-top: 5px;
 
     
 }
 
-header .header-banner div{
+header .header-banner .contenedor div{
     margin: 10px;}
 
 
 
     header .top-header {
-        width: 95%;
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 10px;
         background-color: white;
+        position: fixed;
+        z-index: 10;
 
     }
 
@@ -132,9 +142,6 @@ header .header-banner div{
     }
 
 
-    header .banner{
-        margin-top: 2px;
-    }
 
 
 
@@ -235,14 +242,21 @@ header .header-banner div{
     }
 
     header .banner{
-        order:2
+        margin-top: 220px;
     }
+
+   
+
 
 
     header .top-header .low .search-bar i{
-        color: black;
+        font-size: 20px;
+        text-align: center;
         position: relative;
-        right: 30px;
+        padding: 10px 10px;
+        margin: 0;
+        border-left: 1px solid black;
+        opacity: 90%;
     }
 
 
@@ -329,18 +343,37 @@ header .header-banner div{
            
             height: 90px;
         }
+
         header .low-header .header-banner{
-            position: fixed;
+            justify-content: center;
+            text-align: center;
         }
 
-        header .low-header .header-banner div{
+        header .low-header .header-banner .contenedor{
+         display: flex;
+         justify-content: space-around;
+         width: 80%;
+         max-width: 1300px;
+         margin: auto;
+        }
+        
+    
+
+        header .low-header .header-banner .contenedor div{
             display: flex;
             flex-direction: row;
-            font-size: 14px;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 20px;
         }
-        header .low-header .header-banner div i{
+        header .low-header .header-banner .contenedor div i{
             align-self: center;
-            margin: 0px 10px;
+            margin: 10px 10px;
+        }
+
+        header .low-header .header-banner .contenedor div p{
+            text-align: center;
+            margin: 0;
         }
 
         header .low-header .icons{
@@ -358,7 +391,7 @@ header .top-header .top .logo2{
 header .top-header .low{
     display: flex;
     justify-content: space-between;
-    padding:10px ;
+    padding:20px 0px ;
     width: 90%;
     margin: auto;
     max-width: 1200px;
@@ -366,36 +399,38 @@ header .top-header .low{
 
 
 header .top-header .low .user{
-    font-size: 35px;
+    font-size: 30px;
     align-self: center;
     color: black;
     position: relative;
     right: 10px;
     opacity: 85%;
+    bottom: 3px;
 }
 
 
 header .top-header .low form{
     align-self: center;
-    width: 700px;
     position: relative;
-    left: 20px;
-
+    display: flex;
+    border: 1.5px solid black;
+    right: 15px;
+    top: 1px;
+    opacity: 100%;
+    border-radius: 3px;
 
 
 }
 
 header .top-header .low form input{
     opacity: 85%;
-    border-radius: 20px;
     height: 40px;
     padding: 15px;
-    width: 600px
+    width: 600px;
+    border:none
 }
 
-header .banner{
-    margin-top: 140px;
-}
+
 
 
 }
@@ -809,3 +844,4 @@ body .categorias .categoria h3{
 
 
 }
+
